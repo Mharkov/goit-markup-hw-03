@@ -1,0 +1,486 @@
+html{
+
+box-sizing: border-box;
+
+
+}
+
+*,
+*::before,
+*::after{
+
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0; 
+}
+
+
+:root{
+--primary-title-color: #212121;
+--primary-text-color: #757575;
+--accent-color: #2196F3;
+--primary-white-color: #FFFFFF;
+--secondary-white-color:#F5F4FA;
+--primary-background-colorrgba: rgba(47, 48, 58, 0.8);
+}
+
+
+h1 {
+    margin: 0;
+  }
+
+ul{
+
+    list-style-type: none;
+   
+
+}
+body{
+
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    letter-spacing: 0.03em;
+    
+    background: var(--primary-white-color);
+         
+}
+.link{
+
+    text-decoration: none;
+
+        
+}
+
+.conteiner{
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.Header .conteiner{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+/* Header navigation */
+
+.Navigation{
+
+    display: flex;
+    align-items: center;
+}
+
+
+.navigation-list{
+
+   display: flex;
+
+}
+
+.navigation-list-item:not(:last-child) {
+
+    margin-right: 50px;
+}
+
+
+/* Второй вариант */
+/* .navigation-list-item + .navigation-list-item{
+
+    margin-left: 50px;
+} */
+
+
+.navigation-list-item-link{
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    color: var(--primary-title-color);
+    
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.02em;
+    list-style-type: none;  
+    
+}
+
+.navigation-list a:hover,
+.navigation-list a:focus{
+
+    color: var(--accent-color);
+
+}
+
+/* Header Adress */
+
+  
+
+
+.header-utils{
+    display: flex;
+    
+
+} 
+
+/* .header-address .link{
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    
+
+} */
+ 
+
+
+.header-address .link:not(:last-child){
+
+    margin-right: 50px;
+
+
+}
+
+.header-address-mail{
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.42;
+    letter-spacing: 0.02em;
+    
+    color:  var(--primary-text-color);
+}
+.header-address-tel{
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.42;
+    letter-spacing: 0.02em;
+    
+    color: var(--primary-text-color);
+
+}
+.header-address a:hover,
+.header-address a:focus{
+
+    color: var(--accent-color);
+}
+
+/* Logotip */
+.Logo-full{
+    margin-right: 85px;
+
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    
+    color: var(--primary-title-color);
+
+}
+.Logo {
+    
+    color: var(--accent-color);
+}
+
+/* Главная  часть */
+
+.Main{
+
+ 
+    width: 1600px;
+    height: 800px;
+
+    background: var(--primary-background-colorrgba);
+
+}
+
+.main-part{
+
+    text-align: center;
+    
+
+}
+
+.main-part-title {
+
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.364;
+    /* text-align: center; */
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    padding-top: 200px;
+    
+   
+    color: var(--primary-white-color);
+   
+}
+.main-part-btn {
+    /* display: block;
+    margin-left: auto;
+    margin-right: auto; */
+
+    width: 200px;
+    height: 50px; 
+
+    font-family: inherit;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    
+
+    background: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    color:var(--primary-white-color);
+
+}
+
+ /* Наши преимущества */
+
+ .advantage-list{
+
+    display: flex;
+    margin-top: 94px;
+ }
+
+
+
+ .advantage-list-item:not(:last-child){
+
+    margin-right: 30px;
+
+ }
+.advantage-list-item-title{
+ 
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.143;
+    text-transform: uppercase;
+    
+    color: var(--primary-title-color);
+}
+
+.advantage-list-item{
+    width: 270px;
+    height: 120px;
+ background-color: #F5F4FA;
+ 
+}
+
+
+.advantage-list-item-text{
+
+    font-size: 14px;
+    line-height: 1.714;
+    
+    color: var(--primary-text-color);
+
+}
+.second-title{
+
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.167;
+    text-align: center;
+    
+    color: var(--primary-title-color);
+
+    /* Чем мы занимаемся */
+}
+.works{
+    margin-top: 94px;
+}
+.works-list{
+    display: flex;
+   
+}
+
+.works-list-item-text{
+   
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.143;
+    text-align: center;
+    text-transform: uppercase;
+    
+    color: var(--primary-white-color);
+    background: var(--primary-background-colorrgba);
+}
+
+
+/* Сотрудники */
+.team{
+
+    background: var(--secondary-white-color);
+    
+}
+
+.team-list{
+    
+    background: var(--primary-white-color);
+    
+}
+.team-list-item-name{
+
+  
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.188;
+    text-align: center;
+    
+    color: var(--primary-title-color);
+}
+
+.team-list-item-profession{
+
+    font-size: 16px;
+    line-height: 1.188;
+    text-align: center;
+    
+    color: var(--primary-text-color);
+    
+}
+
+/* Клиенты */
+
+.clients-list a:hover,
+.clients-list a:focus{
+
+    color: var(--accent-color);
+}
+
+/* Footer */
+
+.footer {
+
+    background: #2F303A;
+}
+/* Footer Logo */
+
+.footer-logo{
+
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.192;
+    
+    color: var(--primary-white-color);
+
+}
+.footer-address-text{
+    
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    
+    color: var(--primary-white-color);
+}
+
+.footer-address-text-link{
+
+    font-size: 14px;
+    line-height: 1.71px;
+       
+    color: rgba(255, 255, 255, 0.6);
+
+}
+
+.footer-address a:hover,
+.footer-address a:focus{
+
+   color: var(--accent-color);
+}
+.social-icons-title{
+  
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.143;
+    text-transform: uppercase;
+
+    color: var(--primary-white-color);
+
+}
+
+/* Footer кнопки */
+.mailing-list-btn{
+    
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    font-family: inherit; 
+    letter-spacing: 0.06em;
+
+    color:var(--primary-white-color);
+    background: var(--accent-color);
+}
+.mailing-list-input{
+ 
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.25px;
+         
+    
+    background: #2F303A;
+    color: rgba(255, 255, 255, 0.6);
+
+    /* Страница портфолио */
+}
+.projects-list-btn{
+   
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    font-family: inherit;
+
+    text-align: center;
+
+    color: var(--primary-title-color);
+    background: var(--secondary-white-color);
+}
+.projects-list-btn:hover,
+.projects-list-btn:focus{
+
+    color: var(--primary-white-color);
+    background: var(--accent-color);
+
+}
+.projects-works-title{
+    
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2.0;
+    letter-spacing: 0.06em;
+
+    color: var(--primary-title-color);
+}
+.projects-works-name{
+   
+    font-size: 16px;
+    line-height: 1.87;
+    
+    color: var(--primary-text-color);
+}
+.projects-works-text{
+
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1.56px;
+
+    color: #000000;
+} 
+    
+    
