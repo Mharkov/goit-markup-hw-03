@@ -218,7 +218,7 @@ body{
     /* text-align: center; */
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     padding-top: 200px;
     
    
@@ -252,18 +252,21 @@ body{
  .advantage-list{
 
     display: flex;
-    margin-top: 94px;
+    padding-top: 94px;
+    padding-bottom: 94px;
+   
  }
 
 
 
- .advantage-list-item:not(:last-child){
+.advantage-list-item:not(:last-child){
 
     margin-right: 30px;
 
  }
 .advantage-list-item-title{
- 
+padding-top: 30px; 
+padding-bottom: 10px;
 
     font-weight: 700;
     font-size: 14px;
@@ -276,7 +279,7 @@ body{
 .advantage-list-item{
     width: 270px;
     height: 120px;
- background-color: #F5F4FA;
+
  
 }
 
@@ -290,7 +293,7 @@ body{
 
 }
 .second-title{
-
+   margin-bottom: 50px;
 
     font-weight: 700;
     font-size: 36px;
@@ -302,14 +305,24 @@ body{
     /* Чем мы занимаемся */
 }
 .works{
-    margin-top: 94px;
+    padding-top: 94px;
+    padding-bottom: 94px;
+
 }
 .works-list{
     display: flex;
    
 }
+.works-list-item:not(:last-child){
+
+    margin-right: 30px;
+}
 
 .works-list-item-text{
+    width: 370px;
+    height: 70px;
+    
+    
    
     font-weight: 700;
     font-size: 14px;
@@ -323,19 +336,30 @@ body{
 
 
 /* Сотрудники */
+
+
+
 .team{
+    padding-top: 94px;
+    padding-bottom: 94px;
 
     background: var(--secondary-white-color);
     
 }
 
+.team-list-item:not(:last-child){
+
+    margin-right: 30px;
+}
+
 .team-list{
+    display: flex;
     
     background: var(--primary-white-color);
     
 }
 .team-list-item-name{
-
+   margin-top: 30px;
   
     font-weight: 500;
     font-size: 16px;
@@ -346,7 +370,8 @@ body{
 }
 
 .team-list-item-profession{
-
+    margin-top: 10px;
+    
     font-size: 16px;
     line-height: 1.188;
     text-align: center;
@@ -355,6 +380,20 @@ body{
     
 }
 
+.social{
+
+    display: flex;
+    margin-top: 16px;
+    margin-bottom: 24px;
+    justify-content:space-around;
+}
+
+.social-item:not(:last-child){
+
+    margin-right: 10px;
+}
+
+}
 /* Клиенты */
 
 .clients-list a:hover,
@@ -363,12 +402,36 @@ body{
     color: var(--accent-color);
 }
 
+.clients-list{
+    display: flex;
+}
+
+.clients-list-item{
+
+    width: 170px;
+    height: 90px;
+    border: 1px solid #AFB1B8;
+}
+
+.clients-list-item:not(:last-child){
+
+    margin-right: 30px;
+}
+.clients{
+
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+}
+
 /* Footer */
 
 .footer {
-
-    background: #2F303A;
+  
+   background: #2F303A;
 }
+
+
 /* Footer Logo */
 
 .footer-logo{
