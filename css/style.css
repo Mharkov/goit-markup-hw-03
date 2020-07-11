@@ -277,12 +277,18 @@ padding-bottom: 10px;
 }
 
 .advantage-list-item{
-    width: 270px;
-    height: 120px;
+    
 
  
 }
 
+.advantage-list-fon{
+
+    width: 270px;
+    height: 120px;
+    background: #F5F4FA;
+    text-align: center;
+}
 
 .advantage-list-item-text{
 
@@ -305,7 +311,6 @@ padding-bottom: 10px;
     /* Чем мы занимаемся */
 }
 .works{
-    padding-top: 94px;
     padding-bottom: 94px;
 
 }
@@ -321,6 +326,8 @@ padding-bottom: 10px;
 .works-list-item-text{
     width: 370px;
     height: 70px;
+    padding-top: 27px;
+    padding-bottom: 27px;
     
     
    
@@ -337,14 +344,12 @@ padding-bottom: 10px;
 
 /* Сотрудники */
 
-
-
 .team{
     padding-top: 94px;
     padding-bottom: 94px;
-
     background: var(--secondary-white-color);
     
+        
 }
 
 .team-list-item:not(:last-child){
@@ -354,9 +359,16 @@ padding-bottom: 10px;
 
 .team-list{
     display: flex;
+    justify-content: space-between;
     
+    
+}
+
+.team-list-item{
+
     background: var(--primary-white-color);
-    
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+    border-radius: 0px 0px 4px 4px;
 }
 .team-list-item-name{
    margin-top: 30px;
@@ -367,6 +379,7 @@ padding-bottom: 10px;
     text-align: center;
     
     color: var(--primary-title-color);
+    
 }
 
 .team-list-item-profession{
@@ -405,12 +418,17 @@ padding-bottom: 10px;
 .clients-list{
     display: flex;
 }
-
-.clients-list-item{
+.clients-list li{
 
     width: 170px;
-    height: 90px;
+    line-height: 90px;
     border: 1px solid #AFB1B8;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+.clients-list-item{
+    display: block;
 }
 
 .clients-list-item:not(:last-child){
@@ -429,6 +447,9 @@ padding-bottom: 10px;
 .footer {
   
    background: #2F303A;
+
+   
+   
 }
 
 
@@ -467,6 +488,24 @@ padding-bottom: 10px;
 
    color: var(--accent-color);
 }
+
+.footer.conteiner{
+
+        display: flex;
+       justify-content: space-between;
+        padding-top: 60px;
+        padding-bottom: 60px;
+        align-items: baseline;
+        
+    }
+   
+.social-icons-list{
+
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-between;
+}
+
 .social-icons-title{
   
     font-weight: 700;
@@ -479,6 +518,11 @@ padding-bottom: 10px;
 }
 
 /* Footer кнопки */
+
+.mailing-list{
+    display: block;
+}
+
 .mailing-list-btn{
     
     font-weight: 700;
@@ -499,9 +543,22 @@ padding-bottom: 10px;
     
     background: #2F303A;
     color: rgba(255, 255, 255, 0.6);
-
-    /* Страница портфолио */
 }
+    /* Страница портфолио */
+
+.projects-types-list{
+
+    display: flex;
+    padding-top: 93px;
+    justify-content:center;
+    padding-bottom: 50px;
+
+}
+.projects-types-list-item:not(:last-child){
+
+    margin-right: 8px;
+}
+
 .projects-list-btn{
    
     font-weight: 500;
@@ -521,7 +578,27 @@ padding-bottom: 10px;
     background: var(--accent-color);
 
 }
+
+.projects-works-team{
+
+    display: flex;
+    flex-wrap:wrap;
+    padding-bottom: 94px;
+}
+
+.projects-works-list:not(:nth-child(3n)){
+
+    margin-right: 30px;
+}
+.projects-works-list:not(:nth-last-child(-n + 3)){
+
+    margin-bottom: 30px;
+}
+
+
 .projects-works-title{
+
+    margin-top: 20px;
     
     font-weight: 700;
     font-size: 18px;
@@ -531,7 +608,8 @@ padding-bottom: 10px;
     color: var(--primary-title-color);
 }
 .projects-works-name{
-   
+    margin-top: 4px;
+
     font-size: 16px;
     line-height: 1.87;
     
