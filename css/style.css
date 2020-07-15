@@ -60,6 +60,13 @@ body{
     margin-right: auto;
 
 }
+.Header{
+
+    width: 1600px;
+    border-bottom: 1px solid #ECECEC;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 .Header .conteiner{
 
@@ -69,6 +76,7 @@ body{
     
 }
 
+  
 /* Header navigation */
 
 .Navigation{
@@ -344,7 +352,7 @@ padding-bottom: 10px;
     padding-top: 94px;
     padding-bottom: 94px;
     background: var(--secondary-white-color);
-    margin-left: auto;
+     margin-left: auto;
     margin-right: auto;
         
 }
@@ -453,7 +461,9 @@ padding-bottom: 10px;
   
    background: #2F303A;
    height: 252px;
-   
+   width: 1600px;
+   margin-left: auto;
+   margin-right: auto;
    
 }
 
@@ -466,6 +476,7 @@ padding-bottom: 10px;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.192;
+    font-style: normal;
     
     color: var(--primary-white-color);
 
@@ -504,7 +515,7 @@ padding-bottom: 10px;
    color: var(--accent-color);
 }
 
-.footer.conteiner{
+.footer .conteiner{
         display: flex;
         padding-top: 60px;
         padding-bottom: 60px;
